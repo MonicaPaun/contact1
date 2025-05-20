@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact ANATOMIQ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="contact-container">
+    <h1>Contact ANATOMIQ</h1>
+    <form action="https://formsubmit.co/anatomiq2025@gmail.com" method="POST" onsubmit="showSuccessMessage()">
+      <!-- FormSubmit settings -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://google.com"> <!-- Poți schimba linkul -->
+
+      <input type="text" name="name" placeholder="Numele tău" required>
+      <input type="email" name="email" placeholder="Emailul tău" required>
+      <textarea name="message" placeholder="Mesajul tău" rows="5" required></textarea>
+      <button type="submit">Trimite mesajul</button>
+    </form>
+    <div class="success-message" id="successMsg">Mulțumim! Mesajul tău a fost trimis.</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
